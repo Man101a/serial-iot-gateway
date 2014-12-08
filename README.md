@@ -13,6 +13,10 @@ And it will update the MyTemperature to -3.2 in your xively account in the 12345
 
 ## Suported data services
 
+- [ ] Xively
+- [ ] Emoncms
+- [ ] Data.Sparkfun
+
 ### Xively
 http://xively.com
 
