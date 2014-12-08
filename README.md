@@ -16,15 +16,15 @@ That will update the MyTemperature to -3.2 in your xively account in the 12345 f
 
 void setup()
 {
-  Serial.begin(9600);                                                   // Setup serial port speed
-  Serial.println("K:xively:YOURAPIKEY\n");                              // Set up API key
+  Serial.begin(9600);                       // Setup serial port speed
+  Serial.println("K:xively:YOURAPIKEY\n");  // Set up API key
 }
 
 void loop()
 {
-  String strAnalogPin0 = String(analogRead(0), DEC);                    // Read analog value from channel 0
+  String strAnalogPin0 = String(analogRead(0), DEC);  // Read analog value from channel 0
   Serial.println("P:xively:12345\nAnalogPin0:" + strAnalogPin0 + "\n"); // Post it!
-  delay(60 * 1000);                                                     // 1 minute delay
+  delay(60 * 1000); // 1 minute delay
 }
 ```
 
