@@ -67,10 +67,12 @@ Limits:
 
 ### Module configurations
 
-"RESET"
+"C:RESET\n" - Reset module<br>
+"C:ack:0\n" - Disable acknowledge of messages
+"C:ack:1\n" - Enable acknowledge of messages
 
 ### Data services commands
-The protocol is the same for all services. However each service have different meanings for their feeds (feeds, streams, .. )
+The protocol is the same for all services. However, mind that each service have different meanings for their feeds (feeds, streams, ... )
 
 "K:service:YOUR_API_KEY\n"<br>
 "P:service:optional_feed_id\nfeed:value\n\n"<br>
