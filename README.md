@@ -22,7 +22,7 @@ void setup()
 
 void loop()
 {
-  String strAnalogPin0 = String(analogRead(A0), DEC);                   // Read analog value from arduino channel 0
+  String strAnalogPin0 = String(analogRead(A0), DEC);                   // Read analog value from channel 0
   Serial.println("P:xively:12345\nAnalogPin0:" + strAnalogPin0 + "\n"); // Post it!
   delay(60 * 1000);                                                     // 1 minute delay
 }
