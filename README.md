@@ -16,19 +16,20 @@ And it will update the MyTemperature to -3.2 in your xively account in the 12345
 - [ ] Xively
 - [ ] Emoncms
 - [ ] Data.Sparkfun
+- [ ] ThingSpeak
 
 ### Xively
 http://xively.com
 
 Limits:
+> https://xively.com/dev/docs/api/communicating/usage_limits/
 
 ### Emoncms
 http://emoncms.org
 
 Limits:
 > http://emoncms.org/site/usage
-> Post rate limit:
-> 5-10s.. keep the brakes on your arduino's and nanodes!
+> "Post rate limit: 5-10s.. keep the brakes on your arduino's and nanodes!"
 
 ### Data.Sparkfun
 https://data.sparkfun.com
@@ -36,8 +37,14 @@ https://learn.sparkfun.com/tutorials/pushing-data-to-datasparkfuncom/what-is-pha
 
 Limits:
 > https://data.sparkfun.com
-> Each stream has a maximum of 50mb. After you hit the limit, the oldest data will be erased. (These limitations can be removed if installed on your own server). Logging is limited to 100 pushes in a 15 minute window. This allows you to push data in bursts, or spread them out over the 15 minute window."
+> "Each stream has a maximum of 50mb. After you hit the limit, the oldest data will be erased. (These limitations can be removed if installed on your own server). Logging is limited to 100 pushes in a 15 minute window. This allows you to push data in bursts, or spread them out over the 15 minute window."
 
+### ThingSpeak
+https://thingspeak.com
+
+Limits:
+> http://community.thingspeak.com/documentation/api/
+> "API Rate Limit: The open service via ThingSpeak.com has a rate limit of an update per channel every 15 seconds."
 
 ## Serial Protocol
 
