@@ -12,8 +12,6 @@ Serial.println("P:xively:12345\nMyTemperature:-3.2\n");
 That will update the MyTemperature to -3.2 in your xively account in the 12345 feed. Easy? A more complete Arduino example that updates a channel feed with an analog input value:
 
 ```C++
-#include <Serial.h>
-
 void setup()
 {
   Serial.begin(9600);                       // Setup serial port speed
