@@ -5,11 +5,28 @@ The GLIDERBITS Serial IoT Gateway is an open source (GNU GPL v3), open hardware 
 ## How to use it
 
 Just connect the module to your microcontroller using a serial line communication (GND, TX, RX, +5V) and send string commands to the module. Example:
-```C
+```C++
 Serial.println("K:xively:YOURAPIKEY\n");
 Serial.println("P:xively:12345\nMyTemperature:-3.2\n");
 ```
-And it will update the MyTemperature to -3.2 in your xively account in the 12345 feed.
+That will update the MyTemperature to -3.2 in your xively account in the 12345 feed. Easy? A more complete Arduino example that updates a channel feed with an analog input value:
+
+```C++
+#include <Serial.h>
+
+void setup()
+{
+  Serial.begin(9600);                                                   // Setup serial port speed
+  Serial.println("K:xively:YOURAPIKEY\n");                              // Set up API key
+}
+
+void loop()
+{
+  String strAnalogPin0 = String(analogRead(A0), DEC);                   // Read analog value from arduino channel 0
+  Serial.println("P:xively:12345\nAnalogPin0:" + strAnalogPin0 + "\n"); // Post it!
+  delay(60 * 1000);                                                     // 1 minute delay
+}
+```
 
 ## Suported data services
 
