@@ -6,9 +6,10 @@ The GLIDERBITS Serial IoT Gateway is an open source (GNU GPL v3), open hardware 
 
 Just connect the module to your microcontroller using a serial line communication (GND, TX, RX, +5V) and send string commands to the module. Example:
 ```C
+Serial.println("K:xively:YOURAPIKEY\n");
 Serial.println("P:xively:12345\nMyTemperature:-3.2\n");
 ```
-
+And it will update the MyTemperature to -3.2 in your xively account in the 12345 feed.
 
 ## Suported data services
 
@@ -40,28 +41,28 @@ Limits:
 ### Data services commands
 The protocol is the same for all services. However each service have different meanings for their feeds (feeds, streams, .. )
 
-"K:service:YOUR_API_KEY\n"
-"P:service:optional_feed_id\nfeed:value\n\n"
-"G:service:optional_feed_id\nfeed\n"
+"K:service:YOUR_API_KEY\n"<br>
+"P:service:optional_feed_id\nfeed:value\n\n"<br>
+"G:service:optional_feed_id\nfeed\n"<br>
 
-K - Configure the API Key to use in this sessions. You can setup it just once in the beginning then it will keep using it for this service.
-P - Post one or multiple data. You can send multiple "feed:value\n" in the same sequence. In the end just send '\n'
-G - Get one data value from service and feed
+K - Configure the API Key to use in this sessions. You can setup it just once in the beginning then it will keep using it for this service.<br>
+P - Post one or multiple data. You can send multiple "feed:value\n" in the same sequence. In the end just send '\n'<br>
+G - Get one data value from service and feed<br>
 
 #### Xively
-"K:xively:YOUR_API_KEY\n"
-"P:xively:feed_id\nfeed:value\n\n"
-"G:service:optional_feed_id\nfeed\n"
+"K:xively:YOUR_API_KEY\n"<br>
+"P:xively:feed_id\nfeed:value\n\n"<br>
+"G:service:optional_feed_id\nfeed\n"<br>
 
 #### Emoncms
-"K:emoncms:YOUR_API_KEY\n"
-"P:emoncms:optinal_feed_id\nfeed:value\n\n"
-"G:service:optional_feed_id\nfeed\n"
+"K:emoncms:YOUR_API_KEY\n"<br>
+"P:emoncms:optinal_feed_id\nfeed:value\n\n"<br>
+"G:service:optional_feed_id\nfeed\n"<br>
 
 #### Data.Sparkfun
-"K:sparkfun:YOUR_API_KEY\n"
-"P:sparkfun:optinal_feed_id\nfeed:value\n\n"
-"G:service:optional_feed_id\nfeed\n"
+"K:sparkfun:YOUR_API_KEY\n"<br>
+"P:sparkfun:optinal_feed_id\nfeed:value\n\n"<br>
+"G:service:optional_feed_id\nfeed\n"<br>
 
 ### Misc services
 
