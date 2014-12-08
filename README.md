@@ -89,12 +89,12 @@ G - Get one data value from service<br>
 
 #### Emoncms
 "K:emoncms:YOUR_API_KEY\n"<br>
-"P:emoncms:optinal_feed_id\nfeed:value\n\n"<br>
+"P:emoncms:optional_feed_id\nfeed:value\n\n"<br>
 "G:service:optional_feed_id\nfeed\n"<br>
 
 #### Data.Sparkfun
 "K:sparkfun:YOUR_API_KEY\n"<br>
-"P:sparkfun:optinal_feed_id\nfeed:value\n\n"<br>
+"P:sparkfun:optional_feed_id\nfeed:value\n\n"<br>
 "G:service:optional_feed_id\nfeed\n"<br>
 
 ### Misc services
