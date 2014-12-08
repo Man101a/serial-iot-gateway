@@ -4,9 +4,7 @@ The GLIDERBITS Serial IoT Gateway is an open source (GNU GPL v3), open hardware 
 
 ## How to use it
 
-Connect the module to your microcontroller using an serial line communication (GND, TX, RX, +5V) and just send string commands to the module.
-
-Example:
+Just connect the module to your microcontroller using a serial line communication (GND, TX, RX, +5V) and send string commands to the module. Example:
 ```C
 Serial.println("P:xively:12345\nMyTemperature:-3.2\n");
 ```
