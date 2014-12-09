@@ -1,6 +1,6 @@
-GLIDERBITS - Serial IoT Gateway
-===============================
-The GLIDERBITS Serial IoT Gateway is an open source (GNU GPL v3), open hardware (CC BY-SA 3.0) Serial-Ethernet module that you can use to very easly send to or get data from Internet of Things services cloud.
+Serial IoT Gateway
+==================
+The GLIDERBITS's Serial IoT Gateway is an open source (GNU GPL v3), open hardware (CC BY-SA 3.0) serial-ethernet module that you can use to very easly connect to the Internet of Things.
 
 ## How to use it
 
