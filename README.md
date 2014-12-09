@@ -118,5 +118,6 @@ G - Get one data value from service<br>
 
 ### Hardware licence
 
-    The hardware files are licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License (CC BY-SA 3.0)<br>http://creativecommons.org/licenses/by-sa/3.0/deed.en
+    The hardware files are licensed under the Creative Commons Attribution-Share Alike 3.0 Unported License (CC BY-SA 3.0)
+    http://creativecommons.org/licenses/by-sa/3.0/deed.en
   
