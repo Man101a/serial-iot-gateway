@@ -74,8 +74,8 @@ https://thingspeak.com
 The protocol is the same for all services. However, mind that each service have different meanings for their feeds (feeds, streams, ... )
 
 "K:service:YOUR_API_KEY\n"<br>
-"P:service:optional_feed_id\nfeed:value\n\n"<br>
-"G:service:optional_feed_id\nfeed\n"<br>
+"P:service:optional_feed_id\nChannel_ID:value\n\n"<br>
+"G:service:optional_feed_id\nChannel_ID\n"<br>
 
 K - Configure the API Key to use in this sessions. You can setup it just once, it will keep this same API key for the next posts and gets.<br>
 P - Post one or multiple data. You can send multiple "feed:value\n" in the same sequence. In the end just send '\n'<br>
@@ -83,13 +83,13 @@ G - Get one data value from service<br>
 
 #### Xively
 "K:xively:YOUR_API_KEY\n"<br>
-"P:xively:feed_id\nfeed:value\n\n"<br>
-"G:service:optional_feed_id\nfeed\n"<br>
+"P:xively:feed_id\nChannel_ID:value\n\n"<br>
+"G:xively:feed_id\nChannel_ID\n"<br>
 
 #### Emoncms
 "K:emoncms:YOUR_API_KEY\n"<br>
-"P:emoncms:optional_feed_id\nfeed:value\n\n"<br>
-"G:service:optional_feed_id\nfeed\n"<br>
+"P:emoncms:optional_feed_id\nChannel_ID:value\n\n"<br>
+"G:service:optional_feed_id\nChannel_ID\n"<br>
 
 #### Data.Sparkfun
 "K:sparkfun:YOUR_API_KEY\n"<br>
