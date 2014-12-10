@@ -35,9 +35,9 @@ void loop()
 
 ### Xively
 http://xively.com
-
-Limits:
+Terms and conditions:
 > https://xively.com/dev/docs/api/communicating/usage_limits/
+> https://xively.com/dev/docs/api/api_terms_and_conditions/
 
 ### Emoncms
 http://emoncms.org
