@@ -52,7 +52,8 @@ https://data.sparkfun.com
 https://learn.sparkfun.com/tutorials/pushing-data-to-datasparkfuncom/what-is-phant
 
 #### Terms and conditions:
-> https://data.sparkfun.com
+> https://data.sparkfun.com<br>
+> http://phant.io/docs/input/limit/<br>
 > "Each stream has a maximum of 50mb. After you hit the limit, the oldest data will be erased. (These limitations can be removed if installed on your own server). Logging is limited to 100 pushes in a 15 minute window. This allows you to push data in bursts, or spread them out over the 15 minute window."
 
 ### ThingSpeak
