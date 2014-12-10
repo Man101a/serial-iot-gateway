@@ -35,14 +35,15 @@ void loop()
 
 ### Xively
 http://xively.com
-Terms and conditions:
+
+#### Terms and conditions:
 > https://xively.com/dev/docs/api/communicating/usage_limits/
 > https://xively.com/dev/docs/api/api_terms_and_conditions/
 
 ### Emoncms
 http://emoncms.org
 
-Limits:
+#### Terms and conditions:
 > http://emoncms.org/site/usage
 > "Post rate limit: 5-10s.. keep the brakes on your arduino's and nanodes!"
 
@@ -50,14 +51,14 @@ Limits:
 https://data.sparkfun.com
 https://learn.sparkfun.com/tutorials/pushing-data-to-datasparkfuncom/what-is-phant
 
-Limits:
+#### Terms and conditions:
 > https://data.sparkfun.com
 > "Each stream has a maximum of 50mb. After you hit the limit, the oldest data will be erased. (These limitations can be removed if installed on your own server). Logging is limited to 100 pushes in a 15 minute window. This allows you to push data in bursts, or spread them out over the 15 minute window."
 
 ### ThingSpeak
 https://thingspeak.com
 
-Limits:
+#### Terms and conditions:
 > http://community.thingspeak.com/documentation/api/
 > "API Rate Limit: The open service via ThingSpeak.com has a rate limit of an update per channel every 15 seconds."
 
