@@ -97,6 +97,11 @@ G - Get one data value from service<br>
 "P:sparkfun:optional_feed_id\nfeed:value\n\n"<br>
 "G:service:optional_feed_id\nfeed\n"<br>
 
+#### ThingSpeak
+"K:thingspeak:YOUR_API_KEY\n"<br>
+"P:thingspeak:channel_id\nfield_id:value\n\n"<br>
+"G:thingspeak:channel_id\nfield_id\n"<br>
+
 ### Misc services
 
 ## Licences
