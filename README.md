@@ -6,8 +6,8 @@ The GLIDERBITS's Serial IoT Gateway is an open source (GNU GPL v3), open hardwar
 
 Just connect the module to your microcontroller using a serial line communication (GND, TX, RX, +5V) and send string commands to the module. Example:
 ```C++
-Serial.println("K:xively:YOURAPIKEY\n");
-Serial.println("P:xively:12345\nMyTemperature:-3.2\n");
+Serial.print("K:xively:YOURAPIKEY\n");
+Serial.print("P:xively:12345\nMyTemperature:-3.2\n\n");
 ```
 That will update the MyTemperature to -3.2 in your xively account in the 12345 feed. Easy? A more complete Arduino example that updates a channel feed with an analog input value:
 
@@ -20,8 +20,8 @@ void setup()
 void loop()
 {
   String strAnalogPin0 = String(analogRead(0), DEC);  // Read analog value from channel 0
-  Serial.println("K:xively:YOURAPIKEY\n");  // Set up API key
-  Serial.println("P:xively:12345\nAnalogPin0:" + strAnalogPin0 + "\n"); // Post it!
+  Serial.print("K:xively:YOURAPIKEY\n");  // Set up API key
+  Serial.print("P:xively:12345\nAnalogPin0:" + strAnalogPin0 + "\n\n"); // Post it!
   delay(60 * 1000); // 1 minute delay
 }
 ```
