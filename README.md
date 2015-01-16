@@ -77,10 +77,12 @@ The protocol is the same for all services. However, mind that each service have 
 "K:service:YOUR_API_KEY\n"<br>
 "P:service:optional_feed_id\nChannel_ID:value\n\n"<br>
 "G:service:optional_feed_id\nChannel_ID\n"<br>
+"I:service:000.000.000.000\n"<br>
 
 K - Configure the API Key to use in this sessions. You can setup it just once, it will keep this same API key for the next posts and gets.<br>
 P - Post one or multiple data. You can send multiple "feed:value\n" in the same sequence. In the end just send '\n'<br>
 G - Get one data value from service<br>
+I - Let you configure a specific IP address for that service, ex: if you are running a local service and not using the public one.
 
 #### Xively
 "K:xively:YOUR_API_KEY\n"<br>
