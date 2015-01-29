@@ -20,7 +20,7 @@ void setup()
 void loop()
 {
   String strAnalogPin0 = String(analogRead(0), DEC);  // Read analog value from channel 0
-  Serial.print("K:xively:YOURAPIKEY\n");  // Set up API key
+  Serial.print("K:xively:YOURAPIKEY\n");  // Set API key
   Serial.print("P:xively:12345\nAnalogPin0:" + strAnalogPin0 + "\n\n"); // Post it!
   delay(60 * 1000); // 1 minute delay
 }
@@ -32,6 +32,7 @@ void loop()
 - [ ] Emoncms
 - [ ] Data.Sparkfun
 - [ ] ThingSpeak
+- [ ] Carriots
 
 ### Xively
 http://xively.com
@@ -62,6 +63,15 @@ https://thingspeak.com
 #### Terms and conditions:
 > http://community.thingspeak.com/documentation/api/
 > "API Rate Limit: The open service via ThingSpeak.com has a rate limit of an update per channel every 15 seconds."
+
+### Carriots
+https://www.carriots.com/
+
+#### Terms and conditions:
+> https://www.carriots.com/terms-of-service
+> https://www.carriots.com/pricing
+> "Max. accepted streams 15000 streams / day 500 streams / minute"
+> "Max. Devices Number 10"
 
 ## Serial Protocol
 
