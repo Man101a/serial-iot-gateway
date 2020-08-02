@@ -1,3 +1,6 @@
+This original project has been forked to adapt it for the Industrial Internet of Things Edge gateway for Industrial Automation and Safety Instrumented Systems.
+More details of the project will be at https://www.abhisam.com
+
 Serial IoT Gateway
 ==================
 The GLIDERBITS's Serial IoT Gateway is an open source (GNU GPL v3), open hardware (CC BY-SA 3.0) serial-ethernet module that you can use to very easly connect to the Internet of Things.
